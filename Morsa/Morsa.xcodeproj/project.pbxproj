@@ -1,0 +1,771 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09AA17BE1F05E8650032C2B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AA17BD1F05E8650032C2B4 /* AppDelegate.swift */; };
+		09AA17C31F05E8650032C2B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09AA17C11F05E8650032C2B4 /* Main.storyboard */; };
+		09AA17C51F05E8650032C2B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09AA17C41F05E8650032C2B4 /* Assets.xcassets */; };
+		09AA17C81F05E8650032C2B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09AA17C61F05E8650032C2B4 /* LaunchScreen.storyboard */; };
+		09AA17D31F05E8650032C2B4 /* MorsaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AA17D21F05E8650032C2B4 /* MorsaTests.swift */; };
+		09AA17DE1F05E8650032C2B4 /* MorsaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AA17DD1F05E8650032C2B4 /* MorsaUITests.swift */; };
+		09AA17ED1F05E8E60032C2B4 /* MSMorseCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AA17EC1F05E8E60032C2B4 /* MSMorseCardView.swift */; };
+		09AA18071F05F8580032C2B4 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AA18061F05F8580032C2B4 /* SnapKit.framework */; };
+		09AA180B1F0602650032C2B4 /* MainMorsaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AA17BF1F05E8650032C2B4 /* MainMorsaViewController.swift */; };
+		09E9EEEC1F06057E0048F73B /* MSMorsaCardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E9EEEB1F06057E0048F73B /* MSMorsaCardViewCell.swift */; };
+		0E81710C5A9294B85A1F893F /* Pods_Morsa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6149A229C2BA21C15BDB43C5 /* Pods_Morsa.framework */; };
+		BB65ED7C00F9E8320ADF3674 /* Pods_MorsaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4D336E6DAD10958591A4C63 /* Pods_MorsaTests.framework */; };
+		E6B0FBAA9236240FA46034EE /* Pods_MorsaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12BAA89F2B39D43D2A58345F /* Pods_MorsaUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09AA17CF1F05E8650032C2B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09AA17B21F05E8650032C2B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09AA17B91F05E8650032C2B4;
+			remoteInfo = Morsa;
+		};
+		09AA17DA1F05E8650032C2B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09AA17B21F05E8650032C2B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09AA17B91F05E8650032C2B4;
+			remoteInfo = Morsa;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09AA17BA1F05E8650032C2B4 /* Morsa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Morsa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09AA17BD1F05E8650032C2B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		09AA17BF1F05E8650032C2B4 /* MainMorsaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMorsaViewController.swift; sourceTree = "<group>"; };
+		09AA17C21F05E8650032C2B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		09AA17C41F05E8650032C2B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		09AA17C71F05E8650032C2B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		09AA17C91F05E8650032C2B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09AA17CE1F05E8650032C2B4 /* MorsaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MorsaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09AA17D21F05E8650032C2B4 /* MorsaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorsaTests.swift; sourceTree = "<group>"; };
+		09AA17D41F05E8650032C2B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09AA17D91F05E8650032C2B4 /* MorsaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MorsaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09AA17DD1F05E8650032C2B4 /* MorsaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorsaUITests.swift; sourceTree = "<group>"; };
+		09AA17DF1F05E8650032C2B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09AA17EC1F05E8E60032C2B4 /* MSMorseCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MSMorseCardView.swift; path = UIComponent/MSMorseCardView.swift; sourceTree = "<group>"; };
+		09AA18061F05F8580032C2B4 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Morsa-byknatvqgewbpmcuucdmaraogyho/Build/Products/Debug-iphonesimulator/SnapKit/SnapKit.framework"; sourceTree = "<group>"; };
+		09E9EEEB1F06057E0048F73B /* MSMorsaCardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSMorsaCardViewCell.swift; sourceTree = "<group>"; };
+		12BAA89F2B39D43D2A58345F /* Pods_MorsaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MorsaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18C8D2293E93F4D63B206716 /* Pods-Morsa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Morsa.release.xcconfig"; path = "Pods/Target Support Files/Pods-Morsa/Pods-Morsa.release.xcconfig"; sourceTree = "<group>"; };
+		23F14B358FEE46F56E43B97C /* Pods-MorsaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MorsaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MorsaUITests/Pods-MorsaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4C905979E35256F1B4438250 /* Pods-MorsaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MorsaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MorsaTests/Pods-MorsaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6149A229C2BA21C15BDB43C5 /* Pods_Morsa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Morsa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1A84285FEA56B8FF2D3327D /* Pods-MorsaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MorsaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MorsaUITests/Pods-MorsaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D1CA5B0833EE0DAAE3344C80 /* Pods-MorsaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MorsaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MorsaTests/Pods-MorsaTests.release.xcconfig"; sourceTree = "<group>"; };
+		F4D336E6DAD10958591A4C63 /* Pods_MorsaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MorsaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F63A291BFA51021E6FDC63E9 /* Pods-Morsa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Morsa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Morsa/Pods-Morsa.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09AA17B71F05E8650032C2B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09AA18071F05F8580032C2B4 /* SnapKit.framework in Frameworks */,
+				0E81710C5A9294B85A1F893F /* Pods_Morsa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09AA17CB1F05E8650032C2B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB65ED7C00F9E8320ADF3674 /* Pods_MorsaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09AA17D61F05E8650032C2B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6B0FBAA9236240FA46034EE /* Pods_MorsaUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09AA17B11F05E8650032C2B4 = {
+			isa = PBXGroup;
+			children = (
+				09AA17BC1F05E8650032C2B4 /* Morsa */,
+				09AA17D11F05E8650032C2B4 /* MorsaTests */,
+				09AA17DC1F05E8650032C2B4 /* MorsaUITests */,
+				09AA17BB1F05E8650032C2B4 /* Products */,
+				16AF81B288933603B8D46401 /* Pods */,
+				0A790D203AE80C3D93FD2E52 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		09AA17BB1F05E8650032C2B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09AA17BA1F05E8650032C2B4 /* Morsa.app */,
+				09AA17CE1F05E8650032C2B4 /* MorsaTests.xctest */,
+				09AA17D91F05E8650032C2B4 /* MorsaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09AA17BC1F05E8650032C2B4 /* Morsa */ = {
+			isa = PBXGroup;
+			children = (
+				09AA17BD1F05E8650032C2B4 /* AppDelegate.swift */,
+				09E9EEE91F06052D0048F73B /* MainMorsa */,
+				09AA17EB1F05E8B70032C2B4 /* UIComponent */,
+				09AA17C11F05E8650032C2B4 /* Main.storyboard */,
+				09AA17C41F05E8650032C2B4 /* Assets.xcassets */,
+				09AA17C61F05E8650032C2B4 /* LaunchScreen.storyboard */,
+				09AA17C91F05E8650032C2B4 /* Info.plist */,
+			);
+			path = Morsa;
+			sourceTree = "<group>";
+		};
+		09AA17D11F05E8650032C2B4 /* MorsaTests */ = {
+			isa = PBXGroup;
+			children = (
+				09AA17D21F05E8650032C2B4 /* MorsaTests.swift */,
+				09AA17D41F05E8650032C2B4 /* Info.plist */,
+			);
+			path = MorsaTests;
+			sourceTree = "<group>";
+		};
+		09AA17DC1F05E8650032C2B4 /* MorsaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				09AA17DD1F05E8650032C2B4 /* MorsaUITests.swift */,
+				09AA17DF1F05E8650032C2B4 /* Info.plist */,
+			);
+			path = MorsaUITests;
+			sourceTree = "<group>";
+		};
+		09AA17EB1F05E8B70032C2B4 /* UIComponent */ = {
+			isa = PBXGroup;
+			children = (
+				09AA17EC1F05E8E60032C2B4 /* MSMorseCardView.swift */,
+			);
+			name = UIComponent;
+			sourceTree = "<group>";
+		};
+		09E9EEE91F06052D0048F73B /* MainMorsa */ = {
+			isa = PBXGroup;
+			children = (
+				09AA17BF1F05E8650032C2B4 /* MainMorsaViewController.swift */,
+				09E9EEEA1F0605400048F73B /* View */,
+			);
+			path = MainMorsa;
+			sourceTree = "<group>";
+		};
+		09E9EEEA1F0605400048F73B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				09E9EEEB1F06057E0048F73B /* MSMorsaCardViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0A790D203AE80C3D93FD2E52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09AA18061F05F8580032C2B4 /* SnapKit.framework */,
+				6149A229C2BA21C15BDB43C5 /* Pods_Morsa.framework */,
+				F4D336E6DAD10958591A4C63 /* Pods_MorsaTests.framework */,
+				12BAA89F2B39D43D2A58345F /* Pods_MorsaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		16AF81B288933603B8D46401 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F63A291BFA51021E6FDC63E9 /* Pods-Morsa.debug.xcconfig */,
+				18C8D2293E93F4D63B206716 /* Pods-Morsa.release.xcconfig */,
+				4C905979E35256F1B4438250 /* Pods-MorsaTests.debug.xcconfig */,
+				D1CA5B0833EE0DAAE3344C80 /* Pods-MorsaTests.release.xcconfig */,
+				23F14B358FEE46F56E43B97C /* Pods-MorsaUITests.debug.xcconfig */,
+				D1A84285FEA56B8FF2D3327D /* Pods-MorsaUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09AA17B91F05E8650032C2B4 /* Morsa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09AA17E21F05E8650032C2B4 /* Build configuration list for PBXNativeTarget "Morsa" */;
+			buildPhases = (
+				BFEB184C3DC557427B3E25C2 /* [CP] Check Pods Manifest.lock */,
+				09AA17B61F05E8650032C2B4 /* Sources */,
+				09AA17B71F05E8650032C2B4 /* Frameworks */,
+				09AA17B81F05E8650032C2B4 /* Resources */,
+				1FE6870D52739132B95B7E58 /* [CP] Embed Pods Frameworks */,
+				BBAE40FB1CE41F1E9E631B11 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Morsa;
+			productName = Morsa;
+			productReference = 09AA17BA1F05E8650032C2B4 /* Morsa.app */;
+			productType = "com.apple.product-type.application";
+		};
+		09AA17CD1F05E8650032C2B4 /* MorsaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09AA17E51F05E8650032C2B4 /* Build configuration list for PBXNativeTarget "MorsaTests" */;
+			buildPhases = (
+				00F269F01B68118E0A1229EC /* [CP] Check Pods Manifest.lock */,
+				09AA17CA1F05E8650032C2B4 /* Sources */,
+				09AA17CB1F05E8650032C2B4 /* Frameworks */,
+				09AA17CC1F05E8650032C2B4 /* Resources */,
+				6726E0314114BFBB18586534 /* [CP] Embed Pods Frameworks */,
+				15460E2D69289B24CB457EA4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09AA17D01F05E8650032C2B4 /* PBXTargetDependency */,
+			);
+			name = MorsaTests;
+			productName = MorsaTests;
+			productReference = 09AA17CE1F05E8650032C2B4 /* MorsaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		09AA17D81F05E8650032C2B4 /* MorsaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09AA17E81F05E8650032C2B4 /* Build configuration list for PBXNativeTarget "MorsaUITests" */;
+			buildPhases = (
+				7A42469441D71F7745FA039A /* [CP] Check Pods Manifest.lock */,
+				09AA17D51F05E8650032C2B4 /* Sources */,
+				09AA17D61F05E8650032C2B4 /* Frameworks */,
+				09AA17D71F05E8650032C2B4 /* Resources */,
+				284E167B786399185EC23ADE /* [CP] Embed Pods Frameworks */,
+				2B103913A37B1E66B7ECF0A3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09AA17DB1F05E8650032C2B4 /* PBXTargetDependency */,
+			);
+			name = MorsaUITests;
+			productName = MorsaUITests;
+			productReference = 09AA17D91F05E8650032C2B4 /* MorsaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09AA17B21F05E8650032C2B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = MADAO;
+				TargetAttributes = {
+					09AA17B91F05E8650032C2B4 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 8RG52VJRN9;
+						ProvisioningStyle = Automatic;
+					};
+					09AA17CD1F05E8650032C2B4 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 8RG52VJRN9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 09AA17B91F05E8650032C2B4;
+					};
+					09AA17D81F05E8650032C2B4 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 8RG52VJRN9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 09AA17B91F05E8650032C2B4;
+					};
+				};
+			};
+			buildConfigurationList = 09AA17B51F05E8650032C2B4 /* Build configuration list for PBXProject "Morsa" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 09AA17B11F05E8650032C2B4;
+			productRefGroup = 09AA17BB1F05E8650032C2B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09AA17B91F05E8650032C2B4 /* Morsa */,
+				09AA17CD1F05E8650032C2B4 /* MorsaTests */,
+				09AA17D81F05E8650032C2B4 /* MorsaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09AA17B81F05E8650032C2B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09AA17C81F05E8650032C2B4 /* LaunchScreen.storyboard in Resources */,
+				09AA17C51F05E8650032C2B4 /* Assets.xcassets in Resources */,
+				09AA17C31F05E8650032C2B4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09AA17CC1F05E8650032C2B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09AA17D71F05E8650032C2B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00F269F01B68118E0A1229EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		15460E2D69289B24CB457EA4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MorsaTests/Pods-MorsaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1FE6870D52739132B95B7E58 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Morsa/Pods-Morsa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		284E167B786399185EC23ADE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MorsaUITests/Pods-MorsaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B103913A37B1E66B7ECF0A3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MorsaUITests/Pods-MorsaUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6726E0314114BFBB18586534 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MorsaTests/Pods-MorsaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A42469441D71F7745FA039A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BBAE40FB1CE41F1E9E631B11 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Morsa/Pods-Morsa-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFEB184C3DC557427B3E25C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09AA17B61F05E8650032C2B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09AA180B1F0602650032C2B4 /* MainMorsaViewController.swift in Sources */,
+				09AA17ED1F05E8E60032C2B4 /* MSMorseCardView.swift in Sources */,
+				09AA17BE1F05E8650032C2B4 /* AppDelegate.swift in Sources */,
+				09E9EEEC1F06057E0048F73B /* MSMorsaCardViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09AA17CA1F05E8650032C2B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09AA17D31F05E8650032C2B4 /* MorsaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09AA17D51F05E8650032C2B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09AA17DE1F05E8650032C2B4 /* MorsaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09AA17D01F05E8650032C2B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09AA17B91F05E8650032C2B4 /* Morsa */;
+			targetProxy = 09AA17CF1F05E8650032C2B4 /* PBXContainerItemProxy */;
+		};
+		09AA17DB1F05E8650032C2B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09AA17B91F05E8650032C2B4 /* Morsa */;
+			targetProxy = 09AA17DA1F05E8650032C2B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		09AA17C11F05E8650032C2B4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09AA17C21F05E8650032C2B4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		09AA17C61F05E8650032C2B4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09AA17C71F05E8650032C2B4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		09AA17E01F05E8650032C2B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		09AA17E11F05E8650032C2B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		09AA17E31F05E8650032C2B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F63A291BFA51021E6FDC63E9 /* Pods-Morsa.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8RG52VJRN9;
+				INFOPLIST_FILE = Morsa/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MADAO.Morsa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		09AA17E41F05E8650032C2B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18C8D2293E93F4D63B206716 /* Pods-Morsa.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8RG52VJRN9;
+				INFOPLIST_FILE = Morsa/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MADAO.Morsa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		09AA17E61F05E8650032C2B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C905979E35256F1B4438250 /* Pods-MorsaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8RG52VJRN9;
+				INFOPLIST_FILE = MorsaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MADAO.MorsaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Morsa.app/Morsa";
+			};
+			name = Debug;
+		};
+		09AA17E71F05E8650032C2B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1CA5B0833EE0DAAE3344C80 /* Pods-MorsaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8RG52VJRN9;
+				INFOPLIST_FILE = MorsaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MADAO.MorsaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Morsa.app/Morsa";
+			};
+			name = Release;
+		};
+		09AA17E91F05E8650032C2B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23F14B358FEE46F56E43B97C /* Pods-MorsaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 8RG52VJRN9;
+				INFOPLIST_FILE = MorsaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MADAO.MorsaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Morsa;
+			};
+			name = Debug;
+		};
+		09AA17EA1F05E8650032C2B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1A84285FEA56B8FF2D3327D /* Pods-MorsaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 8RG52VJRN9;
+				INFOPLIST_FILE = MorsaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MADAO.MorsaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Morsa;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09AA17B51F05E8650032C2B4 /* Build configuration list for PBXProject "Morsa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09AA17E01F05E8650032C2B4 /* Debug */,
+				09AA17E11F05E8650032C2B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09AA17E21F05E8650032C2B4 /* Build configuration list for PBXNativeTarget "Morsa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09AA17E31F05E8650032C2B4 /* Debug */,
+				09AA17E41F05E8650032C2B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09AA17E51F05E8650032C2B4 /* Build configuration list for PBXNativeTarget "MorsaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09AA17E61F05E8650032C2B4 /* Debug */,
+				09AA17E71F05E8650032C2B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09AA17E81F05E8650032C2B4 /* Build configuration list for PBXNativeTarget "MorsaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09AA17E91F05E8650032C2B4 /* Debug */,
+				09AA17EA1F05E8650032C2B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 09AA17B21F05E8650032C2B4 /* Project object */;
+}

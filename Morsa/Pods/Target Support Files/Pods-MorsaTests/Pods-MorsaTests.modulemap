@@ -1,0 +1,6 @@
+framework module Pods_MorsaTests {
+  umbrella header "Pods-MorsaTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
