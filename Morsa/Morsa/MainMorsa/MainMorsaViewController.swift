@@ -9,37 +9,46 @@
 import UIKit
 import SnapKit
 
-
 class MainMorsaViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
+    private let kCardSizeWidth = 250
+    private let kCardSizeHeight = 150
+    private let kCardCellReuseIdentifier = "kCardCellReuseIdentifier"
     
-    private var morsaCollectionView:UICollectionView!
+    private var morsaCollectionView:MSMorsaCardCollectionView!
     
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.yellow
         self.setupUserInterface()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     //MARK: - UserInterface
     
     func setupUserInterface() {
-        self.morsaCollectionView = UICollectionView.init(frame: self.view.frame,
-                                   collectionViewLayout: UICollectionViewLayout.init())
+        //Config colleciton view
+        let cardLayout = UICollectionViewFlowLayout.init()
+        cardLayout.itemSize = CGSize(width:kCardSizeWidth, height:kCardSizeHeight)
+        cardLayout.scrollDirection = UICollectionViewScrollDirection.horizontal
+        cardLayout.sectionInset = UIEdgeInsets(top:5, left:5, bottom:5, right:5)
+        
+        self.morsaCollectionView = MSMorsaCardCollectionView.init(frame: self.view.frame,
+                                   collectionViewLayout: cardLayout)
         self.morsaCollectionView.delegate = self
         self.morsaCollectionView.dataSource = self
+        self.morsaCollectionView.clipsToBounds = true
         self.view.addSubview(self.morsaCollectionView)
         self.morsaCollectionView.snp.makeConstraints { (make) in
-            make.top.left.right.equalToSuperview()
-            make.height.equalTo(375)
+            make.top.left.right.equalTo(self.view)
+            make.height.equalTo(220)
         }
         
-        self.morsaCollectionView.register(MSMorsaCardViewCell, forCellWithReuseIdentifier: "1111")
+        self.morsaCollectionView.register(MSMorsaCardViewCell.self, forCellWithReuseIdentifier: kCardCellReuseIdentifier)
     }
     
     //MARK: - UICollectionViewDelegate/DataSource
@@ -48,14 +57,12 @@ class MainMorsaViewController: UIViewController,UICollectionViewDelegate,UIColle
         return 1
     }
     
-    @available(iOS 6.0, *)
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
     }
     
-    @available(iOS 6.0, *)
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        var cardCell = collectionView.dequeueReusableCell(withReuseIdentifier: "1111", for: indexPath)
+        let cardCell = collectionView.dequeueReusableCell(withReuseIdentifier: kCardCellReuseIdentifier, for: indexPath)
         return cardCell
     }
 }

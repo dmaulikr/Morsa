@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		097F53581F06252E007493C7 /* MSMorsaCardCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097F53571F06252E007493C7 /* MSMorsaCardCollectionView.swift */; };
 		09AA17BE1F05E8650032C2B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AA17BD1F05E8650032C2B4 /* AppDelegate.swift */; };
 		09AA17C31F05E8650032C2B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09AA17C11F05E8650032C2B4 /* Main.storyboard */; };
 		09AA17C51F05E8650032C2B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09AA17C41F05E8650032C2B4 /* Assets.xcassets */; };
@@ -16,6 +17,8 @@
 		09AA17ED1F05E8E60032C2B4 /* MSMorseCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AA17EC1F05E8E60032C2B4 /* MSMorseCardView.swift */; };
 		09AA18071F05F8580032C2B4 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AA18061F05F8580032C2B4 /* SnapKit.framework */; };
 		09AA180B1F0602650032C2B4 /* MainMorsaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AA17BF1F05E8650032C2B4 /* MainMorsaViewController.swift */; };
+		09CE73D91F063AFB009FCF7B /* MSMorsaCodePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CE73D81F063AFB009FCF7B /* MSMorsaCodePlayer.swift */; };
+		09CE73DE1F063B65009FCF7B /* MSMorsaCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CE73DD1F063B65009FCF7B /* MSMorsaCode.swift */; };
 		09E9EEEC1F06057E0048F73B /* MSMorsaCardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E9EEEB1F06057E0048F73B /* MSMorsaCardViewCell.swift */; };
 		0E81710C5A9294B85A1F893F /* Pods_Morsa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6149A229C2BA21C15BDB43C5 /* Pods_Morsa.framework */; };
 		BB65ED7C00F9E8320ADF3674 /* Pods_MorsaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4D336E6DAD10958591A4C63 /* Pods_MorsaTests.framework */; };
@@ -40,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		097F53571F06252E007493C7 /* MSMorsaCardCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSMorsaCardCollectionView.swift; sourceTree = "<group>"; };
 		09AA17BA1F05E8650032C2B4 /* Morsa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Morsa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09AA17BD1F05E8650032C2B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09AA17BF1F05E8650032C2B4 /* MainMorsaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMorsaViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +59,8 @@
 		09AA17DF1F05E8650032C2B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09AA17EC1F05E8E60032C2B4 /* MSMorseCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MSMorseCardView.swift; path = UIComponent/MSMorseCardView.swift; sourceTree = "<group>"; };
 		09AA18061F05F8580032C2B4 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Morsa-byknatvqgewbpmcuucdmaraogyho/Build/Products/Debug-iphonesimulator/SnapKit/SnapKit.framework"; sourceTree = "<group>"; };
+		09CE73D81F063AFB009FCF7B /* MSMorsaCodePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSMorsaCodePlayer.swift; sourceTree = "<group>"; };
+		09CE73DD1F063B65009FCF7B /* MSMorsaCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSMorsaCode.swift; sourceTree = "<group>"; };
 		09E9EEEB1F06057E0048F73B /* MSMorsaCardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSMorsaCardViewCell.swift; sourceTree = "<group>"; };
 		12BAA89F2B39D43D2A58345F /* Pods_MorsaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MorsaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C8D2293E93F4D63B206716 /* Pods-Morsa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Morsa.release.xcconfig"; path = "Pods/Target Support Files/Pods-Morsa/Pods-Morsa.release.xcconfig"; sourceTree = "<group>"; };
@@ -122,12 +128,12 @@
 			isa = PBXGroup;
 			children = (
 				09AA17BD1F05E8650032C2B4 /* AppDelegate.swift */,
-				09E9EEE91F06052D0048F73B /* MainMorsa */,
-				09AA17EB1F05E8B70032C2B4 /* UIComponent */,
-				09AA17C11F05E8650032C2B4 /* Main.storyboard */,
-				09AA17C41F05E8650032C2B4 /* Assets.xcassets */,
-				09AA17C61F05E8650032C2B4 /* LaunchScreen.storyboard */,
 				09AA17C91F05E8650032C2B4 /* Info.plist */,
+				09E9EEE91F06052D0048F73B /* MainMorsa */,
+				09CE73DC1F063B4F009FCF7B /* Model */,
+				09AA17EB1F05E8B70032C2B4 /* UIComponent */,
+				09CE73DA1F063B04009FCF7B /* MorsaPlayer */,
+				09CE73DB1F063B2B009FCF7B /* Resource */,
 			);
 			path = Morsa;
 			sourceTree = "<group>";
@@ -158,6 +164,33 @@
 			name = UIComponent;
 			sourceTree = "<group>";
 		};
+		09CE73DA1F063B04009FCF7B /* MorsaPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				09CE73D81F063AFB009FCF7B /* MSMorsaCodePlayer.swift */,
+			);
+			name = MorsaPlayer;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		09CE73DB1F063B2B009FCF7B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				09AA17C11F05E8650032C2B4 /* Main.storyboard */,
+				09AA17C41F05E8650032C2B4 /* Assets.xcassets */,
+				09AA17C61F05E8650032C2B4 /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		09CE73DC1F063B4F009FCF7B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				09CE73DD1F063B65009FCF7B /* MSMorsaCode.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		09E9EEE91F06052D0048F73B /* MainMorsa */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +203,7 @@
 		09E9EEEA1F0605400048F73B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				097F53571F06252E007493C7 /* MSMorsaCardCollectionView.swift */,
 				09E9EEEB1F06057E0048F73B /* MSMorsaCardViewCell.swift */,
 			);
 			path = View;
@@ -485,7 +519,10 @@
 			files = (
 				09AA180B1F0602650032C2B4 /* MainMorsaViewController.swift in Sources */,
 				09AA17ED1F05E8E60032C2B4 /* MSMorseCardView.swift in Sources */,
+				09CE73D91F063AFB009FCF7B /* MSMorsaCodePlayer.swift in Sources */,
+				09CE73DE1F063B65009FCF7B /* MSMorsaCode.swift in Sources */,
 				09AA17BE1F05E8650032C2B4 /* AppDelegate.swift in Sources */,
+				097F53581F06252E007493C7 /* MSMorsaCardCollectionView.swift in Sources */,
 				09E9EEEC1F06057E0048F73B /* MSMorsaCardViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
