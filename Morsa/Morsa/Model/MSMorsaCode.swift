@@ -9,5 +9,12 @@
 import UIKit
 
 class MSMorsaCode: NSObject {
-
+    var code:String!
+    var character:String!
+    
+    init(code:String!, character:String!) {
+        super.init()
+        self.code = code
+        self.character = character
+    }
 }

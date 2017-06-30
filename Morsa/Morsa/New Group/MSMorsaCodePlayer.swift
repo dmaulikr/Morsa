@@ -9,5 +9,15 @@
 import UIKit
 
 class MSMorsaCodePlayer: NSObject {
-
+    
+    //MARK: - Singelton
+    static let sharedPlayer = MSMorsaCodePlayer()
+    
+    private override init() {
+        super.init()
+    }
+    
+    func playMorsaCode(code: MSMorsaCode) {
+        
+    }
 }
