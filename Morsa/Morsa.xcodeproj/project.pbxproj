@@ -22,6 +22,10 @@
 		09E9EEEC1F06057E0048F73B /* MSMorsaCardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E9EEEB1F06057E0048F73B /* MSMorsaCardViewCell.swift */; };
 		0E81710C5A9294B85A1F893F /* Pods_Morsa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6149A229C2BA21C15BDB43C5 /* Pods_Morsa.framework */; };
 		BB65ED7C00F9E8320ADF3674 /* Pods_MorsaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4D336E6DAD10958591A4C63 /* Pods_MorsaTests.framework */; };
+		E0E84AD71F077851000BFF9E /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E84AD61F077851000BFF9E /* AudioKit.framework */; };
+		E0E84AD81F0778C3000BFF9E /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E84AD61F077851000BFF9E /* AudioKit.framework */; };
+		E0E84AD91F0778C3000BFF9E /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E0E84AD61F077851000BFF9E /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E0E84ADD1F07A1A8000BFF9E /* UIColor+MSExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E84ADC1F07A1A8000BFF9E /* UIColor+MSExtension.swift */; };
 		E6B0FBAA9236240FA46034EE /* Pods_MorsaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12BAA89F2B39D43D2A58345F /* Pods_MorsaUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +45,20 @@
 			remoteInfo = Morsa;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E0E84ADA1F0778C3000BFF9E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E0E84AD91F0778C3000BFF9E /* AudioKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		097F53571F06252E007493C7 /* MSMorsaCardCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSMorsaCardCollectionView.swift; sourceTree = "<group>"; };
@@ -69,6 +87,8 @@
 		6149A229C2BA21C15BDB43C5 /* Pods_Morsa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Morsa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1A84285FEA56B8FF2D3327D /* Pods-MorsaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MorsaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MorsaUITests/Pods-MorsaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D1CA5B0833EE0DAAE3344C80 /* Pods-MorsaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MorsaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MorsaTests/Pods-MorsaTests.release.xcconfig"; sourceTree = "<group>"; };
+		E0E84AD61F077851000BFF9E /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
+		E0E84ADC1F07A1A8000BFF9E /* UIColor+MSExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+MSExtension.swift"; path = "Extension/UIColor+MSExtension.swift"; sourceTree = "<group>"; };
 		F4D336E6DAD10958591A4C63 /* Pods_MorsaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MorsaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F63A291BFA51021E6FDC63E9 /* Pods-Morsa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Morsa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Morsa/Pods-Morsa.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,6 +98,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0E84AD81F0778C3000BFF9E /* AudioKit.framework in Frameworks */,
+				E0E84AD71F077851000BFF9E /* AudioKit.framework in Frameworks */,
 				09AA18071F05F8580032C2B4 /* SnapKit.framework in Frameworks */,
 				0E81710C5A9294B85A1F893F /* Pods_Morsa.framework in Frameworks */,
 			);
@@ -105,6 +127,7 @@
 		09AA17B11F05E8650032C2B4 = {
 			isa = PBXGroup;
 			children = (
+				E0E84AD61F077851000BFF9E /* AudioKit.framework */,
 				09AA17BC1F05E8650032C2B4 /* Morsa */,
 				09AA17D11F05E8650032C2B4 /* MorsaTests */,
 				09AA17DC1F05E8650032C2B4 /* MorsaUITests */,
@@ -133,6 +156,7 @@
 				09CE73DC1F063B4F009FCF7B /* Model */,
 				09AA17EB1F05E8B70032C2B4 /* UIComponent */,
 				09CE73DA1F063B04009FCF7B /* MorsaPlayer */,
+				E0E84ADB1F07A160000BFF9E /* Extension */,
 				09CE73DB1F063B2B009FCF7B /* Resource */,
 			);
 			path = Morsa;
@@ -233,6 +257,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E0E84ADB1F07A160000BFF9E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E0E84ADC1F07A1A8000BFF9E /* UIColor+MSExtension.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -246,6 +278,7 @@
 				09AA17B81F05E8650032C2B4 /* Resources */,
 				1FE6870D52739132B95B7E58 /* [CP] Embed Pods Frameworks */,
 				BBAE40FB1CE41F1E9E631B11 /* [CP] Copy Pods Resources */,
+				E0E84ADA1F0778C3000BFF9E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -518,6 +551,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09AA180B1F0602650032C2B4 /* MainMorsaViewController.swift in Sources */,
+				E0E84ADD1F07A1A8000BFF9E /* UIColor+MSExtension.swift in Sources */,
 				09AA17ED1F05E8E60032C2B4 /* MSMorseCardView.swift in Sources */,
 				09CE73D91F063AFB009FCF7B /* MSMorsaCodePlayer.swift in Sources */,
 				09CE73DE1F063B65009FCF7B /* MSMorsaCode.swift in Sources */,
@@ -679,6 +713,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8RG52VJRN9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"\"$(SRCROOT)/AudioKit.framework\"",
+				);
 				INFOPLIST_FILE = Morsa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MADAO.Morsa;
@@ -693,6 +732,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8RG52VJRN9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"\"$(SRCROOT)/AudioKit.framework\"",
+				);
 				INFOPLIST_FILE = Morsa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MADAO.Morsa;

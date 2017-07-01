@@ -10,8 +10,8 @@ import UIKit
 import SnapKit
 
 class MainMorsaViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
-    private let kCardSizeWidth = 250
-    private let kCardSizeHeight = 150
+    private let kCardSizeWidth = 295
+    private let kCardSizeHeight = 145
     private let kCardCellReuseIdentifier = "kCardCellReuseIdentifier"
     
     private var morsaCollectionView:MSMorsaCardCollectionView!
@@ -19,8 +19,10 @@ class MainMorsaViewController: UIViewController,UICollectionViewDelegate,UIColle
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.yellow
+        view.backgroundColor = UIColor.hexStringToUIColor(hex: "#6B92AF")
         self.setupUserInterface()
+        let codes = [MSMorsaCode.init(code: "...", character: "S")]
+        self.loadNewCodes(codes: codes)
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -45,7 +47,7 @@ class MainMorsaViewController: UIViewController,UICollectionViewDelegate,UIColle
         self.view.addSubview(self.morsaCollectionView)
         self.morsaCollectionView.snp.makeConstraints { (make) in
             make.top.left.right.equalTo(self.view)
-            make.height.equalTo(220)
+            make.height.equalTo(200)
         }
         
         self.morsaCollectionView.register(MSMorsaCardViewCell.self, forCellWithReuseIdentifier: kCardCellReuseIdentifier)
@@ -64,6 +66,11 @@ class MainMorsaViewController: UIViewController,UICollectionViewDelegate,UIColle
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cardCell = collectionView.dequeueReusableCell(withReuseIdentifier: kCardCellReuseIdentifier, for: indexPath)
         return cardCell
+    }
+    
+    //MARK: - MorseCodeProcess
+    func loadNewCodes(codes:Array<MSMorsaCode>) {
+//        MSMorsaCodePlayer.sharedPlayer.playMorsaCode(code: codes.first!)
     }
 }
 
