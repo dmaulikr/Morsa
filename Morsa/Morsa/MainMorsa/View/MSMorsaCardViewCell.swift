@@ -20,7 +20,7 @@ class MSMorsaCardViewCell: UICollectionViewCell {
     override init(frame: CGRect) {
         codeTextLabel = UITextField.init()
         characterTextLabel = UILabel.init()
-        morseCode = MSMorsaCode(code: nil, character: nil)
+        morseCode = MSMorsaCode(code: "...", character: "A")
         super.init(frame: frame)
         setupUserInterface()
         setupShadowLayer()
@@ -78,7 +78,6 @@ class MSMorsaCardViewCell: UICollectionViewCell {
         layer.shadowColor = UIColor.black.cgColor
         layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
         layer.shadowOpacity = 0.5
-        layer.shadowPath = shadowPath.cgPath
     }
     
 }

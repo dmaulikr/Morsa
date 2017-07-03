@@ -9,17 +9,21 @@
 import UIKit
 
 class MSMorsaCode: NSObject {
-    var code:String!
-    var character:String!
+    var code:String
+    var character:String
     
     override var description: String {
         return self.character
     }
     
     init(code:String!, character:String!) {
-        super.init()
         self.code = code
         self.character = character
+        super.init()
     }
-
+    
+    class func getMorseCodeWithIndex(index: Int) -> MSMorsaCode {
+        let code = MSMorsaCode.init(code: "...", character: String(describing: UnicodeScalar(index + 65)!))
+        return code
+    }
 }

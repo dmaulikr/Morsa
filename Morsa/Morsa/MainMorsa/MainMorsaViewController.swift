@@ -20,9 +20,7 @@ class MainMorsaViewController: UIViewController,UICollectionViewDelegate,UIColle
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.hexStringToUIColor(hex: "#6B92AF")
-        self.setupUserInterface()
-        let codes = [MSMorsaCode.init(code: "...", character: "S")]
-        self.loadNewCodes(codes: codes)
+        setupUserInterface()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -39,18 +37,31 @@ class MainMorsaViewController: UIViewController,UICollectionViewDelegate,UIColle
         cardLayout.scrollDirection = UICollectionViewScrollDirection.horizontal
         cardLayout.sectionInset = UIEdgeInsets(top:5, left:5, bottom:5, right:5)
         
-        self.morsaCollectionView = MSMorsaCardCollectionView.init(frame: self.view.frame,
+        morsaCollectionView = MSMorsaCardCollectionView.init(frame: self.view.frame,
                                    collectionViewLayout: cardLayout)
-        self.morsaCollectionView.delegate = self
-        self.morsaCollectionView.dataSource = self
-        self.morsaCollectionView.clipsToBounds = true
-        self.view.addSubview(self.morsaCollectionView)
-        self.morsaCollectionView.snp.makeConstraints { (make) in
+        morsaCollectionView.delegate = self
+        morsaCollectionView.dataSource = self
+        morsaCollectionView.clipsToBounds = true
+        view.addSubview(self.morsaCollectionView)
+        morsaCollectionView.snp.makeConstraints { (make) in
             make.top.left.right.equalTo(self.view)
             make.height.equalTo(200)
         }
         
         self.morsaCollectionView.register(MSMorsaCardViewCell.self, forCellWithReuseIdentifier: kCardCellReuseIdentifier)
+        
+        //Config mail view 
+        let mailBoxView = MSMailboxView.init(frame: CGRect(x:0, y:0, width:view.frame.size.width, height: 30))
+        view.addSubview(mailBoxView)
+        mailBoxView.snp.makeConstraints { (make) in
+            make.top.equalTo(morsaCollectionView.snp.bottom)
+            make.left.equalToSuperview().offset(3)
+            make.right.equalToSuperview().offset(-3)
+            make.height.equalTo(30)
+        }
+        
+        //Config table view
+        
     }
     
     //MARK: - UICollectionViewDelegate/DataSource
@@ -60,49 +71,12 @@ class MainMorsaViewController: UIViewController,UICollectionViewDelegate,UIColle
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return 26
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cardCell = collectionView.dequeueReusableCell(withReuseIdentifier: kCardCellReuseIdentifier, for: indexPath) as! MSMorsaCardViewCell
-        switch indexPath.row {
-        case 0:
-            cardCell.morseCode = MSMorsaCode.init(code: "...", character: "a")
-        case 1:
-            cardCell.morseCode = MSMorsaCode.init(code: "---", character: "B")
-        case 2:
-            cardCell.morseCode = MSMorsaCode.init(code: "---", character: "C")
-        case 3:
-            cardCell.morseCode = MSMorsaCode.init(code: "---", character: "D")
-        case 4:
-            cardCell.morseCode = MSMorsaCode.init(code: "---", character: "E")
-        case 5:
-            cardCell.morseCode = MSMorsaCode.init(code: "---", character: "F")
-        case 6:
-            cardCell.morseCode = MSMorsaCode.init(code: "---", character: "G")
-        case 7:
-            cardCell.morseCode = MSMorsaCode.init(code: "---", character: "H")
-        case 8:
-            cardCell.morseCode = MSMorsaCode.init(code: "---", character: "I")
-        case 9:
-            cardCell.morseCode = MSMorsaCode.init(code: "---", character: "J")
-        case 10:
-            cardCell.morseCode = MSMorsaCode.init(code: "---", character: "K")
-        case 11:
-            cardCell.morseCode = MSMorsaCode.init(code: "---", character: "L")
-        case 12:
-            cardCell.morseCode = MSMorsaCode.init(code: "---", character: "M")
-        case 13:
-            cardCell.morseCode = MSMorsaCode.init(code: "---", character: "N")
-        case 14:
-            cardCell.morseCode = MSMorsaCode.init(code: "---", character: "O")
-        case 15:
-            cardCell.morseCode = MSMorsaCode.init(code: "---", character: "P")
-        case 16:
-            cardCell.morseCode = MSMorsaCode.init(code: "---", character: "W")
-        default:
-            cardCell.morseCode = MSMorsaCode.init(code: "..-", character: "Z")
-        }
+        cardCell.morseCode = MSMorseCodeManager.sharedManager.morseCodeTable[indexPath.row]
         return cardCell
     }
     
