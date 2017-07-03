@@ -22,6 +22,8 @@
 		09E9EEEC1F06057E0048F73B /* MSMorsaCardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E9EEEB1F06057E0048F73B /* MSMorsaCardViewCell.swift */; };
 		0E81710C5A9294B85A1F893F /* Pods_Morsa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6149A229C2BA21C15BDB43C5 /* Pods_Morsa.framework */; };
 		BB65ED7C00F9E8320ADF3674 /* Pods_MorsaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4D336E6DAD10958591A4C63 /* Pods_MorsaTests.framework */; };
+		E063F6B91F088F7100FA9667 /* MSMarco.swift in Sources */ = {isa = PBXBuildFile; fileRef = E063F6B81F088F7100FA9667 /* MSMarco.swift */; };
+		E063F6BB1F08988C00FA9667 /* MSMailboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E063F6BA1F08988C00FA9667 /* MSMailboxView.swift */; };
 		E0E84AD71F077851000BFF9E /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E84AD61F077851000BFF9E /* AudioKit.framework */; };
 		E0E84AD81F0778C3000BFF9E /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E84AD61F077851000BFF9E /* AudioKit.framework */; };
 		E0E84AD91F0778C3000BFF9E /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E0E84AD61F077851000BFF9E /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -87,6 +89,8 @@
 		6149A229C2BA21C15BDB43C5 /* Pods_Morsa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Morsa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1A84285FEA56B8FF2D3327D /* Pods-MorsaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MorsaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MorsaUITests/Pods-MorsaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D1CA5B0833EE0DAAE3344C80 /* Pods-MorsaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MorsaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MorsaTests/Pods-MorsaTests.release.xcconfig"; sourceTree = "<group>"; };
+		E063F6B81F088F7100FA9667 /* MSMarco.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSMarco.swift; sourceTree = "<group>"; };
+		E063F6BA1F08988C00FA9667 /* MSMailboxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSMailboxView.swift; sourceTree = "<group>"; };
 		E0E84AD61F077851000BFF9E /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
 		E0E84ADC1F07A1A8000BFF9E /* UIColor+MSExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+MSExtension.swift"; path = "Extension/UIColor+MSExtension.swift"; sourceTree = "<group>"; };
 		F4D336E6DAD10958591A4C63 /* Pods_MorsaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MorsaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -229,6 +233,7 @@
 			children = (
 				097F53571F06252E007493C7 /* MSMorsaCardCollectionView.swift */,
 				09E9EEEB1F06057E0048F73B /* MSMorsaCardViewCell.swift */,
+				E063F6BA1F08988C00FA9667 /* MSMailboxView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -261,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				E0E84ADC1F07A1A8000BFF9E /* UIColor+MSExtension.swift */,
+				E063F6B81F088F7100FA9667 /* MSMarco.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -556,8 +562,10 @@
 				09CE73D91F063AFB009FCF7B /* MSMorsaCodePlayer.swift in Sources */,
 				09CE73DE1F063B65009FCF7B /* MSMorsaCode.swift in Sources */,
 				09AA17BE1F05E8650032C2B4 /* AppDelegate.swift in Sources */,
+				E063F6B91F088F7100FA9667 /* MSMarco.swift in Sources */,
 				097F53581F06252E007493C7 /* MSMorsaCardCollectionView.swift in Sources */,
 				09E9EEEC1F06057E0048F73B /* MSMorsaCardViewCell.swift in Sources */,
+				E063F6BB1F08988C00FA9667 /* MSMailboxView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

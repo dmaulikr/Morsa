@@ -60,11 +60,49 @@ class MainMorsaViewController: UIViewController,UICollectionViewDelegate,UIColle
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return 20
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cardCell = collectionView.dequeueReusableCell(withReuseIdentifier: kCardCellReuseIdentifier, for: indexPath)
+        let cardCell = collectionView.dequeueReusableCell(withReuseIdentifier: kCardCellReuseIdentifier, for: indexPath) as! MSMorsaCardViewCell
+        switch indexPath.row {
+        case 0:
+            cardCell.morseCode = MSMorsaCode.init(code: "...", character: "a")
+        case 1:
+            cardCell.morseCode = MSMorsaCode.init(code: "---", character: "B")
+        case 2:
+            cardCell.morseCode = MSMorsaCode.init(code: "---", character: "C")
+        case 3:
+            cardCell.morseCode = MSMorsaCode.init(code: "---", character: "D")
+        case 4:
+            cardCell.morseCode = MSMorsaCode.init(code: "---", character: "E")
+        case 5:
+            cardCell.morseCode = MSMorsaCode.init(code: "---", character: "F")
+        case 6:
+            cardCell.morseCode = MSMorsaCode.init(code: "---", character: "G")
+        case 7:
+            cardCell.morseCode = MSMorsaCode.init(code: "---", character: "H")
+        case 8:
+            cardCell.morseCode = MSMorsaCode.init(code: "---", character: "I")
+        case 9:
+            cardCell.morseCode = MSMorsaCode.init(code: "---", character: "J")
+        case 10:
+            cardCell.morseCode = MSMorsaCode.init(code: "---", character: "K")
+        case 11:
+            cardCell.morseCode = MSMorsaCode.init(code: "---", character: "L")
+        case 12:
+            cardCell.morseCode = MSMorsaCode.init(code: "---", character: "M")
+        case 13:
+            cardCell.morseCode = MSMorsaCode.init(code: "---", character: "N")
+        case 14:
+            cardCell.morseCode = MSMorsaCode.init(code: "---", character: "O")
+        case 15:
+            cardCell.morseCode = MSMorsaCode.init(code: "---", character: "P")
+        case 16:
+            cardCell.morseCode = MSMorsaCode.init(code: "---", character: "W")
+        default:
+            cardCell.morseCode = MSMorsaCode.init(code: "..-", character: "Z")
+        }
         return cardCell
     }
     
