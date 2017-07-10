@@ -21,9 +21,4 @@ class MSMorsaCode: NSObject {
         self.character = character
         super.init()
     }
-    
-    class func getMorseCodeWithIndex(index: Int) -> MSMorsaCode {
-        let code = MSMorsaCode.init(code: "...", character: String(describing: UnicodeScalar(index + 65)!))
-        return code
-    }
 }

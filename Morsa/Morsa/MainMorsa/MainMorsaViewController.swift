@@ -9,14 +9,17 @@
 import UIKit
 import SnapKit
 
-class MainMorsaViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
+class MainMorsaViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UITableViewDelegate,UITableViewDataSource {
     private let kCardSizeWidth = 295
     private let kCardSizeHeight = 145
     private let kCardCellReuseIdentifier = "kCardCellReuseIdentifier"
+    private let kCodeCellReuseIdentifier = "kCodeCellReuseIdentifier"
     
     private var morsaCollectionView:MSMorsaCardCollectionView!
+    private var codeTableView:UITableView!
     
     // MARK: - LifeCycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.hexStringToUIColor(hex: "#6B92AF")
@@ -44,7 +47,7 @@ class MainMorsaViewController: UIViewController,UICollectionViewDelegate,UIColle
         morsaCollectionView.clipsToBounds = true
         view.addSubview(self.morsaCollectionView)
         morsaCollectionView.snp.makeConstraints { (make) in
-            make.top.left.right.equalTo(self.view)
+            make.top.left.right.equalToSuperview()
             make.height.equalTo(200)
         }
         
@@ -61,7 +64,17 @@ class MainMorsaViewController: UIViewController,UICollectionViewDelegate,UIColle
         }
         
         //Config table view
-        
+        codeTableView = UITableView.init(frame: view.frame)
+        codeTableView.delegate = self
+        codeTableView.dataSource = self
+        codeTableView.register(UITableViewCell.self, forCellReuseIdentifier: kCodeCellReuseIdentifier)
+        view.addSubview(codeTableView)
+        codeTableView.snp.makeConstraints { (make) in
+            make.top.equalTo(mailBoxView.snp.bottom).offset(-mailBoxView.borderWidth)
+            make.left.equalTo(mailBoxView).offset(mailBoxView.borderWidth)
+            make.right.equalTo(mailBoxView).offset( -mailBoxView.borderWidth)
+            make.height.equalTo(200)
+        }
     }
     
     //MARK: - UICollectionViewDelegate/DataSource
@@ -71,13 +84,28 @@ class MainMorsaViewController: UIViewController,UICollectionViewDelegate,UIColle
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 26
+        return MSMorseCodeManager.getTestCode().count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cardCell = collectionView.dequeueReusableCell(withReuseIdentifier: kCardCellReuseIdentifier, for: indexPath) as! MSMorsaCardViewCell
-        cardCell.morseCode = MSMorseCodeManager.sharedManager.morseCodeTable[indexPath.row]
+        cardCell.morseCode = MSMorseCodeManager.getTestCode()[indexPath.row]
         return cardCell
+    }
+    
+    //MARK: - UITableViewDelegate/DataSource
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 2
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let codeCell = tableView.dequeueReusableCell(withIdentifier: kCodeCellReuseIdentifier)
+        return codeCell!
     }
     
     //MARK: - MorseCodeProcess

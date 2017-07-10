@@ -9,6 +9,11 @@
 import UIKit
 
 class MSMailboxView: UIView {
+    var borderWidth:Float {
+        get {
+            return Float((bounds.size.height -  CGFloat(2 * entranceHeight))/2.0)
+        }
+    }
     let entranceHeight:Int = 3
 
     override init(frame: CGRect) {
