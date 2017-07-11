@@ -11,27 +11,63 @@ import AudioKit
 
 class MSMorsaCodePlayer: NSObject {
     
-    private var oscillator = AKOscillator()
-    private var oscillator1 = AKOscillator()
-    private var mixer = AKMixer()
-    
+    private var oscillatorDot = AKPWMOscillator()
+    private var oscillatorDotLine = AKPWMOscillator()
+    private var soundPlayQueue = DispatchQueue.init(label: "xxxx")
+    private let semaphore = DispatchSemaphore.init(value: 1)
     //MARK: - Singelton
     static let sharedPlayer = MSMorsaCodePlayer()
     
     private override init() {
-        mixer = AKMixer(oscillator,oscillator1)
-        mixer.volume = 0.5
-        AudioKit.output = mixer
+        AudioKit.output = oscillatorDot
+        AudioKit.start()
+        oscillatorDot.frequency = 80.midiNoteToFrequency()
+        oscillatorDot.pulseWidth = 0.5
+        oscillatorDot.rampTime = 0
+        oscillatorDot.amplitude = 0.1
         super.init()
     }
     
-    func playMorsaCode(code: MSMorsaCode) {
-        oscillator.amplitude = random(0.5,1)
-        oscillator.frequency = random(220,880)
-        oscillator.start()
-        oscillator1.amplitude = random(0.5,1)
-        oscillator1.frequency = random(220,880)
-        oscillator1.start()
-        AudioKit.start()
+    func playMorsaCodes(codes:Array<MSMorsaCode>) {
+        for code in codes {
+            self.playMorsaCode(code: code)
+        }
+    }
+    
+    private func playMorsaCode(code:MSMorsaCode) {
+        for character in (code.code.characters) {
+            if character == "-" {
+                playMorsaCodeLine()
+            }
+            else {
+                playMorsaCodeDot()
+            }
+        }
+    }
+    
+    private func playMorsaCodeDot() {
+        soundPlayQueue.async {
+            let result = self.semaphore.wait(timeout: DispatchTime.distantFuture)
+            if result == DispatchTimeoutResult.success {
+                self.oscillatorDot.play()
+                Thread.sleep(forTimeInterval: 0.5)
+                self.oscillatorDot.stop()
+                Thread.sleep(forTimeInterval: 0.5)
+                self.semaphore.signal()
+            }
+        }
+    }
+    
+    private func playMorsaCodeLine() {
+        soundPlayQueue.async {
+            let result = self.semaphore.wait(timeout: DispatchTime.distantFuture)
+            if result == DispatchTimeoutResult.success {
+                self.oscillatorDot.play()
+                Thread.sleep(forTimeInterval: 1)
+                self.oscillatorDot.stop()
+                Thread.sleep(forTimeInterval: 0.5)
+                self.semaphore.signal()
+            }
+        }
     }
 }

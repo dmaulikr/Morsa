@@ -112,5 +112,10 @@ class MainMorsaViewController: UIViewController,UICollectionViewDelegate,UIColle
     func loadNewCodes(codes:Array<MSMorsaCode>) {
 //        MSMorsaCodePlayer.sharedPlayer.playMorsaCode(code: codes.first!)
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let codes = MSMorseCodeManager.getTestCode()
+        MSMorsaCodePlayer.sharedPlayer.playMorsaCodes(codes: codes)
+    }
 }
 

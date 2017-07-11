@@ -8,9 +8,19 @@
 
 import UIKit
 
+enum MSMorsaCodeType {
+    case Dot
+    case Line
+}
+
 class MSMorsaCode: NSObject {
     var code:String
     var character:String
+    var codeType:MSMorsaCodeType{
+        get{
+            return code == "-" ? MSMorsaCodeType.Line : MSMorsaCodeType.Dot
+        }
+    }
     
     override var description: String {
         return self.character
